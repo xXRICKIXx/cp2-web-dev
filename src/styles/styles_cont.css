@@ -1,0 +1,93 @@
+/* fontes Open sans importada do google tem q colocar nas outras paginas se for continuar com essa fonte  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-style: normal;
+}
+h2{
+    font-family: cursive;
+    color: #6B4675;
+    text-align: center;
+}
+.menu-section{
+    display: flex;
+}
+header {
+    background-color: #6B4675;
+    color: #F7EB69;
+    font-family: cursive;
+    font-size: 22px;
+}
+header ul{
+    display: flex;
+    margin: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 20px
+}
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+}
+header img{
+    margin: 10px;
+}
+.social-section{
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+}
+img{
+    margin-left: 40px;
+}
+.formulario-section{
+    /* display: flex; */
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+}
+input, select, textarea {
+    width: 50%;              
+    padding: 10px;            
+    border: 2px solid #ccc;   
+    border-radius: 5px;       
+}
+.btn {
+    display: inline-block;
+    background-color: #6B4675;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+
+footer{
+    background-color: #6B4675;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+}
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}

@@ -1,0 +1,121 @@
+/* css da pagina principal */
+/* fontes Open sans importada do google tem q colocar nas outras paginas se for continuar com essa fonte  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-style: normal;
+}
+h2{
+    font-family: cursive;
+    color: #6B4675;
+    text-align: center;
+}
+.menu-section{
+    display: flex;
+}
+header {
+    background-color: #6B4675;
+    color: #F7EB69;
+    font-family: cursive;
+    font-size: 22px;
+}
+header ul{
+    display: flex;
+    margin: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 20px
+}
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+}
+header img{
+    margin: 10px;
+}
+.welcome-section{
+    margin: 10px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.about-section{
+    margin: 10px auto;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+.gallery-section{
+    margin:10px auto;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+.instagram-feed{
+    display: flex;
+    justify-content: center;
+}
+.instagram-feed img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.btn {
+    display: inline-block;
+    background-color: #6B4675;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px;
+}
+.howworks-section{
+    margin:10px auto;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+.help-section{
+    margin:10px auto;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+.service-cards {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #6B4675;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+footer{
+    background-color: #6B4675;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
