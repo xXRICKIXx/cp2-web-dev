@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adotar</title>
     <link rel="stylesheet" href="/src/styles/style.css">
+    <style>
+        .adoption-section{
+            background-color: white; 
+            margin: 20px;
+            padding-left: 30px; 
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .row-1{
+            display: flex;
+        }
+        .row-2{
+            display: flex;
+        }
+        .animal-section{
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 400px;
+            height: 400px;
+            margin: 30px;
+            
+            border-radius: 5px;
+            text-align: center;
+        }
+        .animal-section img{
+            width: 80%;
+            height: 80%;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,7 +55,60 @@
         </div>  
     </header>
 
+    <main>
+        <h2>Animais Disponíveis para Adoção</h2>
 
+        <div class="adoption-section">
+            <div class="row-1">
+                <div class="animal-section">
+                    <img src="/src/images/Cachorros/cachorro_1.png" alt="Wagner">
+                    <h3>Wagner</h3>
+                    <p>Idade: 7 meses</p>
+                    <p>Porte: Medio</p>
+                </div>
+    
+                <div class="animal-section">
+                    <img src="/src/images/Cachorros/cachorro_2.png" alt="Magal">
+                    <h3>Magal</h3>
+                    <p>Idade: 2 anos</p>
+                    <p>Porte: Medio</p>
+                </div>
+    
+                <div class="animal-section">
+                    <img src="/src/images/Cachorros/cachorro_3.png" alt="Pastor">
+                    <h3>Pastor Gabriel</h3>
+                    <p>Idade: 9 meses</p>
+                    <p>Porte: Medio</p>
+                </div>
+
+            </div>
+            <div class="row-2">
+                <div class="animal-section">
+                    <img src="/src/images/Cachorros/gato_1.png" alt="Lil-Vinicinho">
+                    <h3>Lil-Vinicinho</h3>
+                    <p>Idade: 5 meses</p>
+                    <p>Porte: Pequeno</p>
+                </div>
+    
+                <div class="animal-section">
+                    <img src="/src/images/Cachorros/cachorro_4.png" alt="Totoro">
+                    <h3>Totoro</h3>
+                    <p>Idade: 2 ano</p>
+                    <p>Porte: Medio</p>
+                </div>
+    
+                <div class="animal-section">
+                    <img src="/src/images/Cachorros/cachorro_5.png" alt="Comedy">
+                    <h3>Comedy</h3>
+                    <p>Idade: 5 meses</p>
+                    <p>Porte: Medio</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
 
     <footer class="footer">
         <p>&copy; 2024 Projeto Pacotinho de Amor. Todos os direitos reservados.</p>
