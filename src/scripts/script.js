@@ -50,3 +50,8 @@ function Enviar() {
         `Informações preenchidas:\n Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nMensagem: ${mensagem}\n\nEnviado com sucesso!`);
     }
 }
+function popup(nome, idade, porte){
+    alert(`Nome: ${nome}\nIdade: ${idade}\nPorte: ${porte}`)
+    
+
+}
