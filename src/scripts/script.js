@@ -1,31 +1,14 @@
 function Enviar() {
-    var nome = document.querySelector("#nome").value.trim();
-    var email = document.querySelector("#email").value.trim();
-    var telefone = document.querySelector("#phone").value.trim();
-    var assunto = document.querySelector("#assunto").value;
-    var mensagem = document.querySelector("#mensagem").value.trim();
-    // Exibindo os dados em um alert
-    if (nome.length < 2)
-    {
-        alert("O nome deve conter pelo menos duas letras.")
-    }
-    else if (email === ""){
-        alert("O email não pode ficar vazio.");
-
-    }
-    else if (telefone === ""){
-        alert("O telefone não pode ficar vazio.");
-        
-    }
-    else if (assunto === ""){
-        alert("Você deve selecionar um assunto.");
-        
-    }
-    else if (mensagem === ""){
-        alert("A mensagem não pode ficar em branco.");
-        
+    if (document.querySelector('#nome').value.length < 2){
+        alert('Nome (deve conter no mínimo duas letras)');
     }
     else{
+        var nome = document.querySelector("#nome").value
+        var email = document.querySelector("#email").value
+        var telefone = document.querySelector("#telefone").value
+        var assunto = document.querySelector("#assunto").value;
+        var mensagem = document.querySelector("#mensagem").value
+        // Exibindo os dados em um alert
         switch(assunto){
             case 'adocao':
                 assunto = 'Adoção';
@@ -46,10 +29,13 @@ function Enviar() {
                 assunto = 'INVALIDO';
                 break;
         }
-            window.alert(
+        alert(
         `Informações preenchidas:\n Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nMensagem: ${mensagem}\n\nEnviado com sucesso!`);
+        }
+        
     }
-}
+
+
 function popup(nome, idade, porte){
     alert(`Nome: ${nome}\nIdade: ${idade}\nPorte: ${porte}`)
     

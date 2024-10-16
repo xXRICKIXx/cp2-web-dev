@@ -70,16 +70,17 @@ header img{
 .instagram-feed img{
     width: 200px;
     height: 200px;
-    margin: auto;
+    margin: 30px;
+    border-radius: 5px;
 }
 .btn {
-    display: inline-block;
     background-color: #6B4675;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 20px;
+    border-radius: 5px;     
+    margin: 15px;
+    border: none;
 }
 .howworks-section{
     margin:10px auto;
@@ -111,11 +112,42 @@ footer{
     background-color: #6B4675;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     margin-top: auto;
 }
 footer .social-icons a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+/* estilo da pagina adotar */
+.adoption-section{
+    background-color: white; 
+    margin: 20px;
+    text-align: center; 
+}
+.row-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.row-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animal-section{
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.animal-section img{
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
 }
