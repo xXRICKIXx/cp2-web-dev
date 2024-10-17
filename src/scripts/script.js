@@ -14,7 +14,7 @@ function Enviar() {
                 assunto = 'Adoção';
                 break;
             case 'ajuda':
-                assunto = 'Ajuda';
+                assunto = 'Como Ajudar';
                 break;
             case 'prox':
                 assunto = 'Próximos Eventos';
@@ -40,4 +40,21 @@ function popup(nome, idade, porte){
     alert(`Nome: ${nome}\nIdade: ${idade}\nPorte: ${porte}`)
     
 
+}
+function mudar(){
+    titulo = document.querySelector('#titulo');
+    escolha = document.querySelector('#menu').value
+    switch(escolha){
+        case 'Cuidados':
+            titulo.innerText = 'Cuidados Básicos com um pet recém-adotado'; 
+            break;
+        case 'Alimentacao':
+            titulo.innerText = 'Alimentos indicados'; 
+            break;
+        case 'Adaptacao':
+            titulo.innerText = 'Como  adaptar um pet ao novo lar'; 
+            break;
+        default:
+            titulo.innerText = 'Adotei e Agora';
+    }
 }
