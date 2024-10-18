@@ -8,7 +8,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    background-color: #F5F5F5;
+    background-color:#e9e8e8;
     color: #333;
     line-height: 1.6;
     font-style: normal;
@@ -44,16 +44,11 @@ header img{
     margin: 10px;
 }
 
-select:hover {
-    background-color:#FFF176;
-    color: #333;
-}
 .menu{
     background-color: white;
     color: #333;
 }
 .menu select {
-    text-decoration: none;
     padding: 10px;
     background-color: white;
     color: black;
@@ -79,6 +74,11 @@ select:hover {
     height: 80vh;
     text-decoration: none;
     list-style-type: none;
+}
+ p{
+    margin: 30px auto;
+    line-height: 1.6;
+
 }
 footer{
     background-color: #6B4675;

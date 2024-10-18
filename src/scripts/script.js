@@ -1,15 +1,15 @@
 function Enviar() {
-    if (document.querySelector('#nome').value.length < 2){
+    if (document.querySelector('#nome').value.length < 2) {
         alert('Nome (deve conter no mínimo duas letras)');
     }
-    else{
+    else {
         var nome = document.querySelector("#nome").value
         var email = document.querySelector("#email").value
         var telefone = document.querySelector("#telefone").value
         var assunto = document.querySelector("#assunto").value;
         var mensagem = document.querySelector("#mensagem").value
         // Exibindo os dados em um alert
-        switch(assunto){
+        switch (assunto) {
             case 'adocao':
                 assunto = 'Adoção';
                 break;
@@ -25,20 +25,17 @@ function Enviar() {
             case 'outros':
                 assunto = 'Outros';
                 break;
-            default:
-                assunto = 'INVALIDO';
-                break;
         }
         alert(
-        `Informações preenchidas:\n Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nMensagem: ${mensagem}\n\nEnviado com sucesso!`);
-        }
-        
+            `Informações preenchidas:\n Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nMensagem: ${mensagem}\n\nEnviado com sucesso!`);
     }
 
+}
 
-function popup(nome, idade, porte){
+
+function popup(nome, idade, porte) {
     alert(`Nome: ${nome}\nIdade: ${idade}\nPorte: ${porte}`)
-    
+
 
 }
 function mudar() {
@@ -50,48 +47,79 @@ function mudar() {
         case 'inicio':
             titulo.innerText = 'Adotei e Agora?';
             texto.innerHTML = `
-                <p>
-                    Parabéns pela adoção do seu novo pet! Para começar, prepare sua casa com itens essenciais, como uma caminha confortável, um comedouro adequado e um espaço seguro onde seu animal possa se sentir à vontade. 
-                    É importante agendar uma visita ao veterinário logo após a adoção para garantir que seu novo amigo receba as vacinas necessárias, vermifugação e qualquer cuidado inicial que ele possa precisar. 
-                    Tenha paciência durante o processo de adaptação e ofereça um ambiente tranquilo, respeitando o tempo do seu pet para se acostumar com a nova rotina. 
-                    Uma alimentação adequada é fundamental, portanto, mantenha água fresca sempre disponível e evite dar alimentos que possam ser tóxicos para ele. 
-                    Proporcione momentos de lazer com brinquedos interativos e não se esqueça de incluir passeios regulares na rotina, ajudando seu pet a se manter ativo e saudável, o que é essencial para sua felicidade e bem-estar no novo lar.
-                </p>`;
+            <p>Parabéns por adotar um novo amigo! Aqui estão algumas orientações para ajudar você a cuidar bem do seu pet e garantir uma adaptação tranquila.</p> 
+            <h3>Primeiros Dias</h3> 
+            <p>Os primeiros dias são cruciais. Dê ao seu pet tempo para se acostumar com o novo ambiente. Mantenha a casa calma e evite muitas visitas no início.</p> 
+            <h3>Registro e Documentação</h3> 
+            <p>Certifique-se de registrar seu novo amigo no veterinário e manter a documentação em dia, incluindo vacinas e exames.</p> 
+            <h3>Crie um Espaço Seguro</h3> 
+            <p>Prepare um cantinho confortável com cama, água e brinquedos. Isso ajuda seu pet a se sentir seguro.</p> 
+            <h3>Treinamento e Socialização</h3> 
+            <p>Inicie o treinamento básico e socialize seu pet com outros animais e pessoas, sempre de forma gradual.</p> 
+            <h3>Consultas Veterinárias</h3>`;
             break;
 
         case 'Cuidados':
             titulo.innerText = 'Cuidados Básicos com um pet recém-adotado';
             texto.innerHTML = `
-                <p>
-                    Cuidar do seu pet recém-adotado é essencial para garantir seu bem-estar e felicidade. Comece oferecendo ração de qualidade, adequada para a idade e porte do animal, e mantenha sempre água fresca e limpa disponível. 
-                    Visitas regulares ao veterinário são fundamentais para vacinas, exames de saúde e vermifugação. A higiene deve ser uma prioridade: banhos regulares, escovação e limpeza das orelhas ajudam a prevenir doenças. 
-                    Ofereça um espaço seguro e confortável, enriquecido com brinquedos e atividades que estimulem o comportamento natural do seu pet. A socialização e o treinamento são igualmente importantes, então dedique tempo para brincar e ensinar comandos básicos. 
-                    Com amor, atenção e cuidados adequados, seu pet se tornará um membro feliz e saudável da sua família.
-                </p>`;
+            <p>Seja bem-vindo(a) ao Pacotinho de Amor! Abaixo, você encontrará dicas essenciais para garantir que seu novo amigo esteja feliz e saudável.</p>
+    
+            <h3>Consultas Veterinárias</h3>
+            <p>Agende uma consulta assim que possível e mantenha as vacinas sempre em dia.</p>
+    
+            <h3>Alimentação Balanceada</h3>
+            <p>Ofereça ração de qualidade e adequada à idade e porte do seu pet.</p>
+    
+            <h3>Higiene</h3>
+            <p>Realize banhos regulares e escovação para manter a pelagem saudável.</p>
+    
+            <h3>Exercícios Diários</h3>
+            <p>Reserve tempo para passeios e brincadeiras para manter seu pet ativo.</p>
+    
+            <h3>Amor e Atenção</h3>
+            <p>Dedique tempo para criar um vínculo forte com seu novo amigo!</p>`
             break;
 
         case 'Alimentacao':
             titulo.innerText = 'Alimentos indicados';
             texto.innerHTML = `
-                <p>
-                    A alimentação do seu pet é fundamental para sua saúde e bem-estar. Escolha uma ração de qualidade, específica para a idade e o porte do seu animal, evitando alimentos caseiros que podem não fornecer os nutrientes necessários. 
-                    Mantenha sempre água fresca e limpa disponível. Pesquise sobre alimentos que são tóxicos para pets, como chocolate, cebola e uvas, e evite-os a todo custo. 
-                    Consulte seu veterinário para recomendações sobre a melhor dieta para seu novo amigo.
-                </p>`;
+            <p>A alimentação do seu pet é essencial para sua saúde e bem-estar. Confira algumas dicas valiosas:</p>
+    
+            <h3>Ração Adequada</h3>
+            <p>Escolha uma ração de alta qualidade, específica para a idade e porte do seu animal.</p>
+    
+            <h3>Horários Fixos</h3>
+            <p>Estabeleça uma rotina de alimentação para criar segurança e estabilidade.</p>
+    
+            <h3>Evite Alimentos Prejudiciais</h3>
+            <p>Não ofereça chocolate, cebola, uvas e outros alimentos que possam ser tóxicos.</p>
+    
+            <h3>Água Sempre Fresca</h3>
+            <p>Mantenha sempre água limpa e fresca disponível para o seu pet.</p>
+    
+            <h3>Consultas Regulares</h3>
+            <p>Consulte um veterinário para receber orientações específicas sobre a dieta.</p>`;
             break;
 
         case 'Adaptacao':
             titulo.innerText = 'Como adaptar um pet ao novo lar';
             texto.innerHTML = `
-                <p>
-                    Adaptar um pet ao novo lar pode ser um desafio, mas com paciência e atenção, o processo pode ser tranquilo. 
-                    Ofereça um espaço seguro onde seu animal possa explorar e se sentir à vontade. Mantenha uma rotina consistente, com horários fixos para alimentação e passeios, para ajudar seu pet a se sentir seguro. 
-                    Apresente novos ambientes e pessoas aos poucos, permitindo que seu pet se acostume gradualmente com as mudanças. Brinque e interaja frequentemente para fortalecer o vínculo entre vocês. 
-                    Lembre-se, a adaptação pode levar tempo, então seja paciente e ofereça muito amor durante esse processo.
-                </p>`;
+            <p>A chegada de um novo amigo pode ser um grande desafio. Siga essas dicas para uma adaptação tranquila:</p>
+    
+            <h3>Ambiente Confortável</h3>
+            <p>Prepare um espaço tranquilo onde seu pet possa se sentir seguro.</p>
+    
+            <h3>Estabeleça uma Rotina</h3>
+            <p>Uma rotina ajuda seu pet a entender o que esperar, tornando o ambiente mais seguro.</p>
+    
+            <h3>Socialização Gradual</h3>
+            <p>Introduza seu novo amigo a outros pets e pessoas lentamente.</p>
+    
+            <h3>Brinquedos e Atividades</h3>
+            <p>Ofereça brinquedos e atividades para ajudar seu pet a se distrair e se adaptar.</p>
+    
+            <h3>Paciência e Amor</h3>
+            <p>Lembre-se de ser paciente e oferecer muito amor durante esse processo.</p>`
             break;
-
-        default:
-            titulo.innerText = 'Adotei e Agora';
     }
 }
