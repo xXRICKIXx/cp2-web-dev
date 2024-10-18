@@ -4,23 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adotei e Agora</title>
-    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/style_adotei.css">
     <style>
-        select {
-            padding: 10px;
-            background-color: #6B4675;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-family: "Open Sans", sans-serif;
-            font-size: 16px;
-            font-weight: 600;
-        }
-        
-        select:hover {
-            background-color:white;
-            color: #333;
-        }
+
     </style>
 </head>
 <body>
@@ -35,20 +21,31 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Adotar.html">Adotar</a></li>
-                <li><a href="Adotei.html">Adotei e Agora</a>
-                <select id="menu" onchange="mudar()" >
-                    <option value="inicio">Adotei e agora</option>
-                    <option value="Cuidados" >Cuidados Básicos</option>
-                    <option value="Alimentacao">Alimentação</option>
-                    <option value="Adaptacao">Adaptação</option>
-                </select> </li>
+                <li><a href="Adotei.html">Adotei e Agora</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>  
     </header>
     <main>
-        <h1 id="titulo">Adotei e Agora ?</h1>
-
+        <div class="menu">
+            <select id="menu" onchange="mudar()" >
+                <option value="inicio">Adotei e Agora ?</option>
+                <option value="Cuidados" >Cuidados Básicos</option>
+                <option value="Alimentacao">Alimentação</option>
+                <option value="Adaptacao">Adaptação</option>
+            </select>
+        </div>
+        
+        <h2 id="titulo">Adotei e Agora?</h2>
+        <section class="conteudo">
+            <p>
+                Parabéns pela adoção do seu novo pet! Para começar, prepare sua casa com itens essenciais, como uma caminha confortável, um comedouro adequado e um espaço seguro onde seu animal possa se sentir à vontade. 
+                É importante agendar uma visita ao veterinário logo após a adoção para garantir que seu novo amigo receba as vacinas necessárias, vermifugação e qualquer cuidado inicial que ele possa precisar. 
+                Tenha paciência durante o processo de adaptação e ofereça um ambiente tranquilo, respeitando o tempo do seu pet para se acostumar com a nova rotina. 
+                Uma alimentação adequada é fundamental, portanto, mantenha água fresca sempre disponível e evite dar alimentos que possam ser tóxicos para ele. 
+                Proporcione momentos de lazer com brinquedos interativos e não se esqueça de incluir passeios regulares na rotina, ajudando seu pet a se manter ativo e saudável, o que é essencial para sua felicidade e bem-estar no novo lar.
+            </p>
+        </section>
     </main>
 
     <footer class="footer">
