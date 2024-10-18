@@ -42,17 +42,16 @@ function popup(nome, idade, porte){
 
 }
 function mudar(){
-    titulo = document.querySelector('#titulo');
     escolha = document.querySelector('#menu').value
     switch(escolha){
         case 'Cuidados':
-            titulo.innerText = 'Cuidados Básicos com um pet recém-adotado'; 
+            window.location.href =  'Cuidados.html';
             break;
         case 'Alimentacao':
-            titulo.innerText = 'Alimentos indicados'; 
+            window.location.href = 'alimentacao.html';
             break;
         case 'Adaptacao':
-            titulo.innerText = 'Como  adaptar um pet ao novo lar'; 
+            window.location.href = 'adaptacao.html';
             break;
         default:
             titulo.innerText = 'Adotei e Agora';
