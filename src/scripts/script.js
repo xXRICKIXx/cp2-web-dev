@@ -38,6 +38,7 @@ function popup(nome, idade, porte) {
 
 
 }
+
 function mudar() {
     titulo = document.querySelector('#titulo');
     texto = document.querySelector('.conteudo');
@@ -77,9 +78,12 @@ function mudar() {
     
             <h3>Amor e Atenção</h3>
             <p>Dedique tempo para criar um vínculo forte com seu novo amigo!</p>`
+
+
             break;
 
         case 'Alimentacao':
+
             titulo.innerText = 'Alimentos indicados';
             texto.innerHTML = `
             <p>A alimentação do seu pet é essencial para sua saúde e bem-estar. Confira algumas dicas valiosas:</p>
@@ -101,6 +105,7 @@ function mudar() {
             break;
 
         case 'Adaptacao':
+
             titulo.innerText = 'Como adaptar um pet ao novo lar';
             texto.innerHTML = `
             <p>A chegada de um novo amigo pode ser um grande desafio. Siga essas dicas para uma adaptação tranquila:</p>
@@ -119,6 +124,7 @@ function mudar() {
     
             <h3>Paciência e Amor</h3>
             <p>Lembre-se de ser paciente e oferecer muito amor durante esse processo.</p>`
+
             break;
     }
 }
