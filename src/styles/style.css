@@ -10,11 +10,13 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    background-color: #f4f4f4;
+    background-color:white;
     color: #333;
-    line-height: 1.6;
-    font-style: normal;
+    line-height: 1.6em;
+    letter-spacing: 1.2px;
+     word-spacing: 1.2px;
 }
+
 h2{
     font-family: cursive;
     color: #6B4675;
@@ -22,6 +24,8 @@ h2{
 }
 .menu-section{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header {
     background-color: #6B4675;
@@ -46,7 +50,7 @@ header img{
     margin: 10px;
 }
 .welcome-section{
-    margin: 10px;
+    margin: 10px auto;
     background-color: white;
     padding: 20px;
     text-align: center;
@@ -81,6 +85,7 @@ header img{
     border-radius: 5px;     
     margin: 15px;
     border: none;
+    font-size: 14px;
 }
 .howworks-section{
     margin:10px auto;
@@ -123,7 +128,7 @@ footer .social-icons a {
 /* estilo da pagina adotar */
 .adoption-section{
     background-color: white; 
-    margin: 20px;
+    margin: 20px auto;
     text-align: center; 
 }
 .row-1{
