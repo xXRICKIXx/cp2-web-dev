@@ -27,7 +27,7 @@ function Enviar() {
                 break;
         }
         alert(
-            `Informações preenchidas:\n Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nMensagem: ${mensagem}\n\nEnviado com sucesso!`);
+            `Informações preenchidas:\n Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nMensagem: ${mensagem}\nENVIADO COM SUCESSO !`);
     }
 
 }
@@ -55,8 +55,7 @@ function mudar() {
             <h3>Crie um Espaço Seguro</h3> 
             <p>Prepare um cantinho confortável com cama, água e brinquedos. Isso ajuda seu pet a se sentir seguro.</p> 
             <h3>Treinamento e Socialização</h3> 
-            <p>Inicie o treinamento básico e socialize seu pet com outros animais e pessoas, sempre de forma gradual.</p> 
-            <h3>Consultas Veterinárias</h3>`;
+            <p>Inicie o treinamento básico e socialize seu pet com outros animais e pessoas, sempre de forma gradual.</p> `;
             break;
 
         case 'Cuidados':

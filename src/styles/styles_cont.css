@@ -9,18 +9,22 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    background-color:#e9e8e8;
+    background-color:white;
     color: #333;
-    line-height: 1.6;
-    font-style: normal;
+    line-height: 1.6em;
+    letter-spacing: 1.2px;
+     word-spacing: 1.2px;
 }
 h2{
     font-family: cursive;
     color: #6B4675;
     text-align: center;
 }
+
 .menu-section{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header {
     background-color: #6B4675;
@@ -50,15 +54,19 @@ header img{
     background-color: white;
     text-decoration: none;
 }
+.social-section h1{
+    text-align: justify;
+    font-size: 40px;
+}
 img{
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .formulario-section{
     font-family: "Open Sans", sans-serif;
     padding: 20px;
     text-align: center;
     background-color: white;
-    margin: 20px;
+    margin: 20px auto;
 }
 input, select, textarea {
     width: 50%;              
@@ -79,13 +87,14 @@ label{
     border: none; 
 }
 
-
 footer{
     background-color: #6B4675;
     color: white;
     text-align: center;
     padding: 5px;
     margin-top: auto;
+    letter-spacing: 0px;
+    word-spacing: 0px;
 }
 footer .social-icons a {
     color: white;
