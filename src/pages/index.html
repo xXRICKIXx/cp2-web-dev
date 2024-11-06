@@ -1,107 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing Page</title>
+    <title>Layout</title>
     <link rel="stylesheet" href="/src/styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
-<body>
-        <!--Menu e Cabeçalho-->
-        <header>
-            <div class="menu-section">
-                <div class="logo">
-                    <img src="/src/images/logo_pacotinho.png" alt="Logo do Projeto" width="100px">
-                </div>
-                <h1 class="txt-logo">Pacotinho de Amor</h1>
-            </div>
-            <div class="options">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Adotar.html">Adotar</a></li>
-                    <li><a href="Adotei.html">Adotei e agora</a></li>
-                    <li><a href="/src/pages/contato.html">Contato</a></li>
-                </ul>
-            </div>  
-        </header>
-    <main>
-        <!--Seçao de Boas vinda-->
-        <section id="home" class="welcome-section">
-                <h2>Sejam bem-vindos Amiguinhos!</h2>
-                <!--como um slogan-->
-                <p>Muito mais que uma ONG, somos um grupo movido pelo amor aos animais. </p>
-        </section>
 
-        <!--breve histroria do projeto -->
+<body>
+    <header>
+        <div class="logo">
+            <img src="/src/images/logo_pacotinho.png" alt="Logo do Projeto Pacotinho de Amor" id="img-logo">
+        </div>
+        <div class="pesquisa">
+            <input type="text" id="barra-pesquisa" placeholder="Pesquise...">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Adotar.html">Adotar</a>
+            <a href="Adotei.html">Adotei e agora</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container">
         <section id="sobre" class="about-section">
             <h2>Sobre o Projeto</h2>
             <p>
-                Somos o Projeto Pacotinho de Amor, não somos apenas uma ONG e sim um grupo de pessoas que amam os animais. Criamos esse site para mostrar um trabalho feito por AMOR e com AMOR. Estamos desde 2019 neste projeto e até então já doamos quase 1300 cães e gatos.
+                Somos o Projeto Pacotinho de Amor, um grupo de pessoas que amam os animais. Criamos esse site para mostrar
+                um trabalho feito por AMOR e com AMOR. Estamos desde 2019 neste projeto e até agora já doamos quase 1300 cães e gatos.
             </p>
         </section>
-        <!--fotos do instagram de alguns dos pets-->
+
         <section id="gallery" class="gallery-section">
             <h2>Nossos Ferinhas</h2>
-            <p>Confira aqui alguns dos nossos amiguinhos especiais .</p>
+            <p>Confira aqui alguns dos nossos amiguinhos especiais.</p>
             <div class="instagram-feed">
                 <img src="/src/images/Cachorros/cachorro_1.png" alt="Imagem 1">
                 <img src="/src/images/Cachorros/cachorro_2.png" alt="Imagem 2">
                 <img src="/src/images/Cachorros/cachorro_3.png" alt="Imagem 3">
                 <img src="/src/images/Cachorros/gato_1.jpg" alt="Imagem 4">
             </div>
-            <!--link para o instagram da ONG -->
-            <a href="https://www.instagram.com/projeto.pacotinhodeamor" target="_blank" class="btn">Veja mais no Instagram</a>
-        </section>  
-        <!--breve tutorial de como adotar -->
+            <a href="https://www.instagram.com/projeto.pacotinhodeamor" target="_blank" class="btn">Instagram</a>
+        </section>
+
         <section id="requisitos-adocao" class="howworks-section">
             <h2>Como funciona</h2>
-            <p>
-                Todos os adotantes devem responder a pré-entrevista que enviamos. Após serem aprovados, no ato da adoção, é necessário preencher o termo de adoção e trazer cópia do RG, CPF e comprovante de residência (água, luz, telefone).
-            </p>
-            <p>
-                Para adoção de gatos, é obrigatório e inegociável morar em local 100% telado e sem rotas de fuga.
-            </p>
-            <p>
-                Somos de São Paulo e só realizamos doações para pessoas que moram no estado de São Paulo, sem exceção.
-            </p>
-            <p>
-                Todas as adoções serão acompanhadas através de fotos. Pedimos que os adotantes se comprometam a enviar atualizações sempre que possível ou solicitado.
-            </p>
-        </section>    
-        <!--local onde os interessados em participar podem escolher como ajudar-->
-        <section id="help" class="help-section">
-            <h2>Como ajudar</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Adoção</h3>
-                    <p>Ajudamos cães e gatos a encontrarem famílias amorosas e responsáveis.</p>
-                </div>
-                <div class="card">
-                    <h3>Voluntariado</h3>
-                    <p>Junte-se a nós como voluntário e faça a diferença na vida de um animal.</p>
-                </div>
-                <div class="card">
-                    <h3>Doações</h3>
-                    <p>Contribua com alimentos, medicamentos ou suporte financeiro.</p>
-                </div>
-                <div class="card">
-                    <h3>Divulgue</h3>
-                    <p>Compartilhe nosso projeto nas redes sociais e ajude-nos a alcançar mais pessoas!</p>
-                </div>
-            </div>
+            <p>Todos os adotantes devem responder a pré-entrevista. Após aprovação, no ato da adoção, é necessário preencher
+                o termo de adoção e trazer cópia do RG, CPF e comprovante de residência.</p>
+            <p>Para adoção de gatos, é obrigatório morar em local 100% telado e sem rotas de fuga.</p>
+            <p>Realizamos doações apenas para pessoas de São Paulo, sem exceção.</p>
+            <p>As adoções serão acompanhadas com fotos. Pedimos que os adotantes enviem atualizações sempre que possível.</p>
+        </section>
+        <h2>Nos conheça pessoalmente</h2>
+        <h3>Proximos Eventos</h3>
+        <section class="feirinhas-section">
+                <img src="/src/images/eventos/novembro_event.jpg" alt="Evento de Adoção">
+
+                <img src="/src/images/eventos/event_dezembro.jpg" alt="Feira de Adoção">
         </section>
     </main>
-    
-    <footer class="footer">
-        <p>Tel: (11) 99489-6555</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/projeto.pacotinhodeamor" target="_blank">Instagram</a> |
-            <a href="https://www.facebook.com/profile.php?id=100078099393909" target="_blank">Facebook</a>
-            <p>&copy; 2024 Projeto Pacotinho de Amor</p>
-        </div>
+
+    <aside>
+        <h3>Relacionados</h3>
+        <section class="links">
+            <ul>
+                <li>📅 Eventos/Feiras</li>
+                <li>📱 <a href="#">Nosso WhatsApp</a></li>
+                <li>📷 <a href="#">Nosso Instagram</a></li>
+                <li>💸 Pix: 11994896555</li>
+                <li>🔗 <a href="https://forms.gle/cvnf8QdVn1hbCDtUA">Link para a entrevista de adoção</a></li>
+                <li>🐾 <a href="#">Adotar</a></li>
+            </ul>
+        </section>
+        <button class="btn">Entre ou cadastre-se</button>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Projeto Pacotinho de Amor</p>
     </footer>
 </body>
+
 </html>
