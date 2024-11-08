@@ -15,89 +15,105 @@ body {
     letter-spacing: 1.2px;
      word-spacing: 1.2px;
 }
-h2{
-    font-family: cursive;
-    color: #6B4675;
-    text-align: center;
+header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color:black;
 }
-
-.menu-section{
+.logo{
+    width: 30vw;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-header {
-    background-color: #6B4675;
-    color: #F7EB69;
-    font-family: cursive;
-    font-size: 22px;
+#img-logo {
+    height: 90%;
+    width: 40%;
+    border-radius: 50%;
 }
-header ul{
+.menu {
+    height: 100%;
+    width: 70vw;
     display: flex;
-    
-    text-decoration: none;
-    list-style-type: none;
-}
-header a {
-    color: white;
-    text-decoration: none;
-    margin: auto 20px;
-    font-size: 16px;
-}
-header img{
-    margin: 10px;
-}
-.social-section{
-    font-family: "Open Sans", sans-serif;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    text-decoration: none;
-}
-.social-section h1{
-    text-align: justify;
-    font-size: 40px;
-}
-img{
-    margin-left: 30px;
-}
-.formulario-section{
-    font-family: "Open Sans", sans-serif;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    margin: 20px auto;
-}
-input, select, textarea {
-    width: 50%;              
-    padding: 10px;            
-    border: 2px solid  #6B4675;   
-    border-radius: 5px;       
-}
-label{
-    text-align: left;
-}
-.btn {
-    display: inline-block;
-    background-color: #6B4675;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none; 
+    justify-content:center; 
+    align-items: flex-end;
 }
 
-footer{
-    background-color: #6B4675;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin-top: auto;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-}
-footer .social-icons a {
-    color: white;
+.menu > a {
+    margin: 0px 10px;
     text-decoration: none;
-    margin: 0 10px;
+    font-size: 1.1rem;
+}
+main{
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.social-section{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.icon-section{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+.icon-section > a > img{
+    height:6em;
+    width: 6em;
+    border-radius: 50%;
+}
+.formulario-section{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.formulario-section > form {
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form input, form select, form textarea {
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%; /* Faz os campos ocuparem toda a largura disponível */
+}
+#btn-Envia{
+    padding: 6px 20px;
+    margin-bottom: 10px;
+    background-color:#572A5E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+button#btn-Envia:hover {
+    background-color:#B793BA ;
+}
+footer{
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f4b0;
 }
