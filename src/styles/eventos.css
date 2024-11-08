@@ -1,0 +1,87 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background-color:white;
+    color: #333;
+    line-height: 1.6em;
+    letter-spacing: 1.2px;
+     word-spacing: 1.2px;
+
+    }
+    .menu-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header {
+        background-color: #6B4675;
+        color: #F7EB69;
+        font-family: cursive;
+        font-size: 22px;
+    }
+    header ul{
+        display: flex;
+        margin: 10px;
+        text-decoration: none;
+        list-style-type: none;
+        gap: 20px
+    }
+    header a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 16px;
+    }
+    header img{
+        margin: 10px;
+    }
+    
+    .menu{
+        background-color: white;
+        color: #333;
+    }
+    .menu select {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .conteudo{
+        margin:20px;
+        background-color:white;
+        padding: 20px;
+        text-align: justify;
+        height: 100vh;
+        text-decoration: none;
+    }
+    .conteudo ul{
+        margin:20px;
+        background-color:white;
+        padding: 20px;
+        text-align: justify;
+        height: 80vh;
+        text-decoration: none;
+        list-style-type: none;
+    }
+     .conteudo p{
+        margin: 30px auto;
+        line-height: 1.6;
+    
+    }
+    footer{
+        background-color: #6B4675;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin-top: auto;
+    }
+    footer .social-icons a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
