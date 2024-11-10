@@ -6,85 +6,89 @@
 }   
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    background-color:white;
-    color: #333;
+    background-color: #572A5E;
+    color: black;
+    display: flex;
+    flex-direction: column;
     line-height: 1.6em;
     letter-spacing: 1.2px;
      word-spacing: 1.2px;
 }
 h2{
-    font-family: cursive;
-    color: #6B4675;
-    text-align: center;
-}
-.menu-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: white;
 }
 header {
-    background-color: #6B4675;
-    color: #F7EB69;
-    font-family: cursive;
-    font-size: 22px;
-}
-header ul{
+    width: 100%;
     display: flex;
-    margin: 10px;
-    text-decoration: none;
-    list-style-type: none;
-    gap: 20px
-}
-header a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 16px;
-}
-header img{
-    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.menu{
-    background-color: white;
-    color: #333;
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+#img-logo {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+}
+
+.pesquisa {
+    text-align: center;
+    width: 70%;
+
+}
+
+#barra-pesquisa {
+    border-radius: 15px;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+main{
+    text-align: center;
 }
 .menu select {
-    padding: 10px;
-    background-color: white;
-    color: black;
+    padding: 1em;
+    background-color: #B793BA;
+    color:white;
     border: none;
     border-radius: 5px;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
 }
 .conteudo{
-    margin:20px;
+    margin:2em;
     background-color:white;
-    padding: 20px;
+    padding: 1em;
     text-align: justify;
-    height: 100vh;
     text-decoration: none;
-}
-.conteudo ul{
-    margin:20px;
-    background-color:white;
-    padding: 20px;
-    text-align: justify;
-    height: 80vh;
-    text-decoration: none;
-    list-style-type: none;
+    border-radius: 15px;
 }
  .conteudo p{
-    margin: 30px auto;
+    font-size: 1.2em;
+    margin: 3em auto;
     line-height: 1.6;
 
 }
 footer{
-    background-color: #6B4675;
     color: white;
     text-align: center;
     padding: 5px;

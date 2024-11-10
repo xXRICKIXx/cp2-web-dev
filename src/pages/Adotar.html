@@ -13,80 +13,73 @@
 
 <body>
     <header>
-        <div class="menu-section">
-            <div class="logo">
-                <img src="/src/images/logo_pacotinho.png" alt="Logo do Projeto" width="100px">
-            </div>
-            <h1 class="txt-logo">Pacotinho de Amor</h1>
+        <div class="logo">
+            <img src="/src/images/logo_pacotinho.png" alt="Logo do Projeto Pacotinho de Amor" id="img-logo">
         </div>
-        <div class="options">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Adotar.html">Adotar</a></li>
-                <li><a href="Adotei.html">Adotei e agora</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="eventos.html">Contato</a></li>
-            </ul>
+        <div class="pesquisa">
+            <input type="text" id="barra-pesquisa" placeholder="Pesquise...">
         </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Adotar.html">Adotar</a>
+            <a href="Adotei.html">Adotei e agora</a>
+            <a href="contato.html">Contato</a>
+            <a href="eventos.html">Eventos</a>
+            
+        </nav>
     </header>
 
     <main>
         <h2>Animais Disponíveis para Adoção</h2>
-
-        <div class="adoption-section">
-            <div class="row-1">
+        <section class="adoption-section">
+            <article class="row-1">
                 <div class="animal-section">
-                    <img src="/src/images/Cachorros/cachorro_1.png" alt="Wagner">
+                    <img src="/src/images/Cachorros/gato_1.jpg" alt="Wagner" class="animais-img">
                     <h3>Wagner</h3>
                     <button onclick="popup('Wagner', '7 meses', 'Grande')" class="btn">Saiba Mais</button>
                 </div>
 
                 <div class="animal-section">
-                    <img src="/src/images/Cachorros/cachorro_2.png" alt="Magal">
+                    <img src="/src/images/Cachorros/cachorro_5.png" alt="Magal" class="animais-img">
                     <h3>Magal</h3>
                     <button onclick="popup('Magal', '2 anos', 'Médio')" class="btn">Saiba Mais</button>
                 </div>
 
                 <div class="animal-section">
-                    <img src="/src/images/Cachorros/cachorro_3.png" alt="Pastor">
+                    <img src="/src/images/Cachorros/cachorro_4.png" alt="Pastor" class="animais-img" >
                     <h3>Pastor Gabriel</h3>
                     <button onclick="popup('Pastor', '9 meses', 'Médio')" class="btn">Saiba Mais</button>
                 
                 </div>
-            </div>
-            <div class="row-2">
+            </article>
+            <article class="row-2">
 
                 <div class="animal-section">
-                    <img src="/src/images/Cachorros/gato_1.jpg" alt="Lil-Vinicinho">
+                    <img src="/src/images/Cachorros/cachorro_3.png" alt="Lil-Vinicinho" class="animais-img">
                     <h3>Lil-Vinicinho</h3>
                     <button class="btn" onclick="popup('Lil-Vinicinho', '5 meses', 'Pequeno')">Saiba Mais</button>
                 </div>
 
                 <div class="animal-section">
-                    <img src="/src/images/Cachorros/cachorro_4.png" alt="Totoro">
+                    <img src="/src/images/Cachorros/cachorro_2.png" alt="Totoro" class="animais-img">
                     <h3>Totoro</h3>
                     <button class="btn" onclick="popup('Totoro', '2 anos', 'Medio')">Saiba Mais</button>
                 </div>
 
                 <div class="animal-section">
-                    <img src="/src/images/Cachorros/cachorro_5.png" alt="Comedy">
+                    <img src="/src/images/Cachorros/cachorro_1.png" alt="Comedy" class="animais-img">
                     <h3>Comedy</h3>
                     <button class="btn" onclick="popup('Comedy', '5 meses', 'Pequeno')">Saiba Mais</button>
                 </div>
 
-            </div>
+            </article>
 
-        </div>
+        </section>
 
     </main>
 
     <footer class="footer">
-        <p>Tel: (11) 99489-6555</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/projeto.pacotinhodeamor" target="_blank">Instagram</a> |
-            <a href="https://www.facebook.com/profile.php?id=100078099393909" target="_blank">Facebook</a>
             <p>&copy; 2024 Projeto Pacotinho de Amor</p>
-        </div>
     </footer>
     <script src="/src/scripts/script.js"></script>
 </body>
