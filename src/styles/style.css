@@ -12,18 +12,16 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    padding: 0 2vw;
     line-height: 1.6em;
     letter-spacing: 1.2px;
      word-spacing: 1.2px;
 }
 
 header {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 1rem 2rem;
     flex-wrap: wrap;
 }
 
@@ -39,14 +37,15 @@ header {
 }
 
 .pesquisa {
-    flex: 1;
     text-align: center;
+    width: 70%;
+
 }
 
 #barra-pesquisa {
     border-radius: 15px;
     padding: 1rem;
-    width: 70%;
+    width: 50%;
     text-align: center;
 }
 
@@ -154,4 +153,42 @@ footer {
     padding: 1rem;
     text-align: center;
     color: white;
+}
+.adoption-section{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+
+}
+.row-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.row-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.animal-section{
+    height: 25rem;
+    width: 25rem;
+    background-color: #B793BA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 15px;
+}
+.animal-section > img{
+    height: 20em;
+    width: 20em;
+    border-radius: 15px;
+
 }

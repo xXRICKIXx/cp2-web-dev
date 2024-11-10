@@ -10,37 +10,37 @@
 
 <body>
     <header>
-        <div class="menu-section">
-            <div class="logo">
-                <img src="/src/images/logo_pacotinho.png" alt="Logo do Projeto" width="100px">
-            </div>
-            <h1 class="txt-logo">Pacotinho de Amor</h1>
+        <div class="logo">
+            <img src="/src/images/logo_pacotinho.png" alt="Logo do Projeto Pacotinho de Amor" id="img-logo">
         </div>
-        <div class="options">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Adotar.html">Adotar</a></li>
-                <li><a href="Adotei.html">Adotei e Agora</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="eventos.html">Contato</a></li>
-            </ul>
+        <div class="pesquisa">
+            <input type="text" id="barra-pesquisa" placeholder="Pesquise...">
         </div>
-    </header>
-    <main>
-
-        <div class="menu">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Adotar.html">Adotar</a>
+            <a href="Adotei.html">Adotei e agora</a>
+            <a href="contato.html">Contato</a>
+            <a href="eventos.html">Eventos</a>
+            
+        </nav>
+        <aside class="menu">
             <select id="menu" onchange="mudar()">
                 <option value="inicio">Adotei e Agora ?</option>
                 <option value="Cuidados">Cuidados Básicos</option>
                 <option value="Alimentacao">Alimentação</option>
                 <option value="Adaptacao">Adaptação</option>
             </select>
-        </div>
+        </aside>
+    </header>
+    <main>
+
+
 
         <h2 id="titulo">Adotei e Agora?</h2>
         <section class="conteudo">
-            <p>Parabéns por adotar um novo amigo! Aqui estão algumas orientações para ajudar você a cuidar bem do seu
-                pet e garantir uma adaptação tranquila.</p>
+            <h3>Parabéns por adotar um novo amigo! Aqui estão algumas orientações para ajudar você a cuidar bem do seu
+                pet e garantir uma adaptação tranquila.</h3>
             <h3>Primeiros Dias</h3>
             <p>Os primeiros dias são cruciais. Dê ao seu pet tempo para se acostumar com o novo ambiente. Mantenha a
                 casa calma e evite muitas visitas no início.</p>
@@ -56,12 +56,7 @@
 
     </main>
     <footer class="footer">
-        <p>Tel: (11) 99489-6555</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/projeto.pacotinhodeamor" target="_blank">Instagram</a> |
-            <a href="https://www.facebook.com/profile.php?id=100078099393909" target="_blank">Facebook</a>
             <p>&copy; 2024 Projeto Pacotinho de Amor</p>
-        </div>
     </footer>
     <script src="/src/scripts/script.js"></script>
 </body>
